@@ -1,4 +1,4 @@
-﻿
+
 $(function () {
 echarts_1();
 echarts_2();
@@ -221,7 +221,7 @@ function echarts_5() {
     },
     xAxis: [{
         type: 'category',
-      		data: ['浙江', '上海', '江苏', '广东', '北京', '深圳', '安徽', '四川'],
+      		data: ['牛客', 'boss直聘', '智联招聘', '猎聘', '12', '23', '34', '45'],
         axisLine: {
             show: true,
          lineStyle: {
@@ -485,7 +485,7 @@ var placeHolderStyle = {
 	}
 };
 option = {
-	color: ['#0f63d6', '#0f78d6', '#0f8cd6', '#0fa0d6', '#0fb4d6'],
+	color: ['#0f63d6', '#0f78d6', '#0f8cd6'],
 	tooltip: {
 		show: true,
 		formatter: "{a} : {c} "
@@ -495,16 +495,16 @@ option = {
         itemHeight: 10,
 		itemGap: 12,
 		bottom: '3%',
-		
-		data: ['浙江', '上海', '广东', '北京', '深圳'],
+
+		data: ['小树苗', '小树', '大树'],
 		textStyle: {
                     color: 'rgba(255,255,255,.6)',
                 }
 	},
-	
+
 	series: [
 		{
-		name: '浙江',
+		name: '小树苗',
 		type: 'pie',
 		clockWise: false,
 		center: ['50%', '42%'],
@@ -522,7 +522,7 @@ option = {
 		}]
 	},
 		{
-		name: '上海',
+		name: '小树',
 		type: 'pie',
 		clockWise: false,
 		center: ['50%', '42%'],
@@ -538,9 +538,9 @@ option = {
 			tooltip: {show: false},
 			itemStyle: placeHolderStyle
 		}]
-	}, 
+	},
 		{
-		name: '广东',
+		name: '大树',
 		type: 'pie',
 		clockWise: false,
 		hoverAnimation: false,
@@ -557,44 +557,10 @@ option = {
 			itemStyle: placeHolderStyle
 		}]
 	},
-		{
-		name: '北京',
-		type: 'pie',
-		clockWise: false,
-		hoverAnimation: false,
-		center: ['50%', '42%'],
-		radius: ['29%', '40%'],
-		itemStyle: dataStyle,
-		data: [{
-			value: 60,
-			name: '04'
-		}, {
-			value: 40,
-			name: 'invisible',
-			tooltip: {show: false},
-			itemStyle: placeHolderStyle
-		}]
-	}, 
-		{
-		name: '深圳',
-		type: 'pie',
-		clockWise: false,
-		hoverAnimation: false,
-		center: ['50%', '42%'],
-		radius: ['20%', '30%'],
-		itemStyle: dataStyle,
-		data: [{
-			value: 50,
-			name: '05'
-		}, {
-			value: 50,
-			name: 'invisible',
-			tooltip: {show: false},
-			itemStyle: placeHolderStyle
-		}]
-	}, ]
+
+		 ]
 };
-      
+
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
         window.addEventListener("resize",function(){
@@ -627,7 +593,7 @@ position:function(p){   //其中p为当前鼠标的位置
 top:'70%',
        itemWidth: 10,
         itemHeight: 10,
-        data:['0岁以下','20-29岁','30-39岁','40-49岁','50岁以上'],
+        data:['18岁以下','19岁','20岁','21岁','22岁'],
                 textStyle: {
             color: 'rgba(255,255,255,.5)',
 			fontSize:'12',
@@ -643,11 +609,11 @@ top:'70%',
             label: {show:false},
 			labelLine: {show:false},
             data:[
-                {value:1, name:'0岁以下'},
-                {value:4, name:'20-29岁'},
-                {value:2, name:'30-39岁'},
-                {value:2, name:'40-49岁'},
-                {value:1, name:'50岁以上'},
+                {value:200, name:'18岁以下'},
+                {value:400, name:'19岁'},
+                {value:122, name:'20岁'},
+                {value:34, name:'21岁'},
+                {value:12, name:'22岁'},
             ]
         }
     ]
